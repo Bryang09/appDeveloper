@@ -1,0 +1,206 @@
+$button: #ff6288;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  // display: flex;
+
+  .bg {
+    background-image: url("/img/bg3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    .bg-main {
+      display: flex;
+      width: 100vw;
+      height: 90%;
+    }
+
+    .illustration {
+      height: 80%;
+      width: 50%;
+      background: url("/img/puzzle.svg") no-repeat center center/ cover;
+      margin-right: 5vw;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text {
+      width: 50%;
+      transform: translateY(-15vh);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 130px;
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 40px;
+        color: #a4a4a4;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      h5 {
+        margin-top: 10px;
+        border: 1px solid $button;
+        padding: 20px 40px;
+        border-radius: 35px;
+        background: $button;
+        color: #fff;
+        box-shadow: 1px 2px 8px $button;
+        cursor: pointer;
+
+        &:hover {
+          background: darken($button, 5%);
+          border: 1px solid darken($button, 5%);
+        }
+      }
+    }
+  }
+
+  .mouse {
+    height: 90px;
+    width: 40px;
+    background: url("/img/mouse1.svg") no-repeat center center / cover;
+    transform: translateY(-5vh);
+    animation: mouse 3s infinite linear;
+  }
+
+  @keyframes mouse {
+    0% {
+      transform: translateY(0);
+    }
+    // 50% {
+    //   transform: translateY(0);
+    // }
+    50% {
+      transform: translateY(-2vh);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 1192px) {
+  .hero {
+    .bg {
+      background: #2125a7;
+
+      .illustration {
+        height: 60%;
+        width: 70%;
+        padding-right: 15vw;
+        margin: 0 auto;
+      }
+      .text {
+        font-size: 40px;
+        height: 30%;
+        transform: translateY(0);
+        margin: 0 auto;
+
+        h1 {
+          font-size: 120px;
+          width: 70vw;
+          color: #fff;
+        }
+        h4 {
+          font-size: 29px;
+        }
+        h5 {
+          padding: 10px 30px;
+          font-size: 30px;
+        }
+      }
+      .bg-main {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    .bg {
+      .illustration {
+        height: 60%;
+        width: 40%;
+        padding-right: 15vw;
+        margin: 0 auto;
+      }
+      .text {
+        font-size: 40px;
+        height: 30%;
+        transform: translateY(-3vh);
+
+        margin: 0 auto;
+
+        h1 {
+          font-size: 60px;
+          width: 70vw;
+          color: #fff;
+        }
+        h4 {
+          font-size: 15px;
+        }
+        h5 {
+          padding: 10px 30px;
+          font-size: 20px;
+        }
+      }
+      .bg-main {
+        flex-direction: column;
+        margin-top: -10vh;
+        height: 80%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    .bg {
+      .illustration {
+        height: 40%;
+        width: 80%;
+        padding-right: 15vw;
+        margin: 0 auto;
+      }
+      .text {
+        height: 30%;
+
+        margin: 0 auto 2vh;
+
+        h1 {
+          font-size: 55px;
+          width: 90vw;
+          color: #fff;
+        }
+        h4 {
+          font-size: 15px;
+          width: 90vw;
+        }
+        h5 {
+          padding: 10px 30px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
