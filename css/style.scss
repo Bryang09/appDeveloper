@@ -80,6 +80,7 @@ body {
     background: url("/img/mouse1.svg") no-repeat center center / cover;
     transform: translateY(-5vh);
     animation: mouse 3s infinite linear;
+    transition: 1s ease;
   }
 
   @keyframes mouse {

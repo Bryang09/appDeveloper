@@ -110,6 +110,8 @@ body {
           transform: translateY(-5vh);
   -webkit-animation: mouse 3s infinite linear;
           animation: mouse 3s infinite linear;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 @-webkit-keyframes mouse {
