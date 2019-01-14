@@ -55,7 +55,7 @@ body {
         margin-bottom: 0;
       }
       h4 {
-        font-size: 40px;
+        font-size: 35px;
         color: #a4a4a4;
         font-weight: 300;
         margin-top: 10px;
@@ -105,7 +105,7 @@ body {
 }
 
 .services {
-  height: 60vh;
+  height: 40vh;
   background: #f9f9ff;
   flex-direction: column;
 
@@ -134,7 +134,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transform: translateY(-30vh);
+      transform: translateY(-10vh);
       animation: service 1s ease;
 
       .icon {
@@ -177,7 +177,34 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-30vh);
+    transform: translateY(-10vh);
+  }
+}
+
+// REVIEWS
+
+.reviews {
+  height: 40vh;
+
+  .reviewContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #8d0054, #ff6288);
+    display: flex;
+
+    .reviewBox {
+      width: 30%;
+      margin: 0 1.5%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
   }
 }
 
@@ -279,6 +306,18 @@ body {
             font-size: 15px;
           }
         }
+      }
+    }
+  }
+  .reviews {
+    height: 100%;
+
+    .reviewContainer {
+      flex-direction: column;
+
+      .reviewBox {
+        width: 90vw;
+        margin: 1vh auto;
       }
     }
   }

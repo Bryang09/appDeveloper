@@ -81,7 +81,7 @@ body {
 }
 
 .hero .bg .text h4 {
-  font-size: 40px;
+  font-size: 35px;
   color: #a4a4a4;
   font-weight: 300;
   margin-top: 10px;
@@ -148,7 +148,7 @@ body {
 }
 
 .services {
-  height: 60vh;
+  height: 40vh;
   background: #f9f9ff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -197,8 +197,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(-30vh);
-          transform: translateY(-30vh);
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
   -webkit-animation: service 1s ease;
           animation: service 1s ease;
 }
@@ -259,8 +259,8 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-30vh);
-            transform: translateY(-30vh);
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
   }
 }
 
@@ -270,9 +270,43 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-30vh);
-            transform: translateY(-30vh);
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
   }
+}
+
+.reviews {
+  height: 40vh;
+}
+
+.reviews .reviewContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(45deg, #8d0054, #ff6288);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .reviewContainer .reviewBox {
+  width: 30%;
+  margin: 0 1.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews .reviewContainer .reviewBox h3 {
+  color: #fff;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1192px) {
@@ -376,6 +410,19 @@ body {
   }
   .services .servicesContainer .serviceBox .text h4 {
     font-size: 15px;
+  }
+  .reviews {
+    height: 100%;
+  }
+  .reviews .reviewContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews .reviewContainer .reviewBox {
+    width: 90vw;
+    margin: 1vh auto;
   }
 }
 
